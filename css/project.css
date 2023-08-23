@@ -1,0 +1,31 @@
+/* ... (Previous styles) ... */
+
+.project-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h2 {
+  margin-bottom: 10px;
+}
+
+.project p {
+  color: #666;
+}
+
+/* ... (Remaining styles) ... */

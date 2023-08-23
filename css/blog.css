@@ -1,0 +1,51 @@
+/* ... (Previous styles) ... */
+
+.blog {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.article {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+  margin-bottom: 10px;
+}
+
+.article p {
+  color: #666;
+}
+
+/* ... (Remaining styles) ... */
+
+/* ... (Previous styles) ... */
+
+.back-button {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.back-button a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.back-button a:hover {
+  color: #66a3ff;
+}
+
+/* ... (Remaining styles) ... */
