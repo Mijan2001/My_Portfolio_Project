@@ -163,7 +163,10 @@
                                         ReactJS for frontend and NodeJS for
                                         backend
                                     </p>
-                                    <div class="w-full mt-6">
+                                    <div
+                                        class="w-full mt-6 cursor-pointer"
+                                        onclick="sendEmail()"
+                                    >
                                         <a
                                             class="flex text-center items-center justify-center w-full pt-4 pr-10 pb-4 pl-10 text-black text-2xl font-medium bg-yellow-600 rounded-xl transition duration-500 ease-in-out transform border-2 border-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                                             >Hire me</a
@@ -273,7 +276,10 @@
 
         <!-- resume section starts  -->
 
-        <div class="flex justify-center items-center bg-gray-900 mb-5">
+        <div
+            class="flex justify-center items-center bg-gray-900 mb-5"
+            onclick="location.href='https://github.com/Mijan2001/My-CV/blob/main/PortFolio(Mijanur%20Rahman)%20(2).pdf'"
+        >
             <div
                 class="flex justify-center gap-2 h-auto items-center text-yellow-300 border-yellow-400 border-2 p-3 rounded-lg hover:text-black hover:bg-yellow-300"
             >
@@ -691,7 +697,7 @@
                     <div
                         class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
                     >
-                        <div>
+                        <div onclick="sendEmail()">
                             <h1 class="lg:text-3xl group-hover:text-black">
                                 Email
                             </h1>
@@ -710,6 +716,7 @@
 
                     <div
                         class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                        onclick="window.location.href='https://www.facebook.com/Mijan.CSE.PUST'"
                     >
                         <div>
                             <h1 class="text-3xl group-hover:text-black">
@@ -730,6 +737,7 @@
 
                     <div
                         class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                        onclick="window.location.href='https://github.com/Mijan2001'"
                     >
                         <div>
                             <h1 class="text-3xl group-hover:text-black">
@@ -750,6 +758,7 @@
 
                     <div
                         class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                        onclick="window.location.href='https://www.linkedin.com/in/mijan2001/'"
                     >
                         <div>
                             <h1 class="text-3xl group-hover:text-black">
@@ -770,6 +779,7 @@
 
                     <div
                         class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                        onclick="window.location.href='https://www.linkedin.com/in/mijan2001/'"
                     >
                         <div>
                             <h1 class="text-3xl group-hover:text-black">
@@ -796,7 +806,10 @@
         <!-- footer section starts  -->
         <footer class="footer footer-center bg-base-300 text-base-content p-4">
             <aside>
-                <p class="font-bold text-white text-xl p-6">
+                <p
+                    class="font-bold text-white text-xl p-6 cursor-pointer"
+                    onclick="window.location.href='https://github.com/Mijan2001'"
+                >
                     Copyright © 2024 - All right reserved Mijanur Rahman
                 </p>
             </aside>
@@ -804,6 +817,17 @@
         <!-- footer section ends  -->
 
         <!-- javaScript  -->
+        <script>
+            function sendEmail() {
+                const email = 'mijan.cse19@gmail.com';
+                const subject = 'Inquiry';
+                const body =
+                    'Hello, I would like to know more about your services.';
+                window.location.href = `mailto:${email}?subject=${encodeURIComponent(
+                    subject
+                )}&body=${encodeURIComponent(body)}`;
+            }
+        </script>
         <script
             defer
             src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"
