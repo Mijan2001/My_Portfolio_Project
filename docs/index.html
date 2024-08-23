@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mijan's Portfolio</title>
+
+        <!-- google font link here  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- fontawesome cdn  -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link rel="stylesheet" href="./output.css" />
+    </head>
+    <body>
+        <!-- component -->
+        <header class="bg-gray-800">
+            <nav class="container mx-auto px-6 py-3">
+                <div class="flex items-center justify-between">
+                    <div class="text-white font-bold text-xl">
+                        <a
+                            class="font-[Satisfy] text-yellow-300 text-3xl"
+                            href="#"
+                            >Mijanur Rahman</a
+                        >
+                    </div>
+                    <div class="hidden md:block">
+                        <ul class="flex items-center space-x-8">
+                            <li class="group">
+                                <a href="#" class="text-white group-">Home</a>
+                                <div
+                                    class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"
+                                ></div>
+                            </li>
+
+                            <li class="group">
+                                <a href="#" class="text-white group-"
+                                    >About Me</a
+                                >
+                                <div
+                                    class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"
+                                ></div>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-white group-">Resume</a>
+                                <div
+                                    class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"
+                                ></div>
+                            </li>
+                            <li class="group">
+                                <a href="#" class="text-white group-"
+                                    >Contact</a
+                                >
+                                <div
+                                    class="w-0 group-hover:w-full h-0.5 bg-white ease-in-out duration-500"
+                                ></div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="icon-click" class="md:hidden">
+                        <button class="outline-none mobile-menu-button">
+                            <svg
+                                class="w-6 h-6 text-white"
+                                x-show="!showMenu"
+                                fill="none"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                viewBox="0 0 24 24"
+                                stroke="currentColor"
+                            >
+                                <path d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="showNav" class="mobile-menu hidden md:hidden">
+                    <ul class="mt-4 space-y-4 text-center">
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-white bg-gray-900 rounded border-gray-600 hover:border-blue-500 hover:duration-800 hover:ease-in-out hover:transition-all hover:bg-yellow-300 hover:text-black hover:font-bold"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-white bg-gray-900 rounded border-gray-600 hover:border-blue-500 hover:duration-800 hover:ease-in-out hover:transition-all hover:bg-yellow-300 hover:text-black hover:font-bold"
+                                >About Me</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-white bg-gray-900 rounded border-gray-600 hover:border-blue-500 hover:duration-800 hover:ease-in-out hover:transition-all hover:bg-yellow-300 hover:text-black hover:font-bold"
+                                >Resume</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="block px-4 py-2 text-white bg-gray-900 rounded border-gray-600 hover:border-blue-500 hover:duration-800 hover:ease-in-out hover:transition-all hover:bg-yellow-300 hover:text-black hover:font-bold"
+                                >Contact</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- profile section starts  -->
+
+        <!-- component -->
+        <div class="overflow-y-auto sm:p-0 pr-4 pb-20 pl-4 bg-transparent">
+            <div
+                class="flex justify-center items-end text-center min-h-screen sm:block"
+            >
+                <!-- <div
+                    class="bg-yellow-300 transition-opacity bg-opacity-75"
+                ></div>
+                <span class="hidden sm:inline-block sm:align-middle sm:h-screen"
+                    >​</span
+                > -->
+                <div
+                    class="inline-block text-left bg-transparent rounded-lg overflow-hidden align-bottom transition-all transform sm:my-2 sm:align-middle sm:max-w-xl sm:w-full"
+                >
+                    <div
+                        class="items-center w-full mr-auto ml-auto relative max-w-7xl md:px-12 lg:px-24"
+                    >
+                        <div class="grid grid-cols-1">
+                            <div
+                                class="mt-4 mr-auto mb-4 ml-auto bg-transparent max-w-lg"
+                            >
+                                <div
+                                    class="flex flex-col items-center pt-6 pr-6 pb-6 pl-6"
+                                >
+                                    <img
+                                        src="./images/profile-image.png"
+                                        class="flex-shrink-0 object-cover object-center w-64 h-64 lg:w-80 lg:h-80 rounded-full shadow-xl transition-all duration-500 ease-in-out"
+                                    />
+                                    <p
+                                        class="mt-8 text-2xl font-semibold leading-none text-white tracking-tighter lg:text-3xl"
+                                    >
+                                        Mijanur Rahman
+                                    </p>
+                                    <p
+                                        class="mt-3 text-xl leading-relaxed text-center text-gray-200"
+                                    >
+                                        I am a fullstack software developer with
+                                        ReactJS for frontend and NodeJS for
+                                        backend
+                                    </p>
+                                    <div class="w-full mt-6">
+                                        <a
+                                            class="flex text-center items-center justify-center w-full pt-4 pr-10 pb-4 pl-10 text-black text-2xl font-medium bg-yellow-600 rounded-xl transition duration-500 ease-in-out transform border-2 border-yellow-400 hover:bg-yellow-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                                            >Hire me</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- profile section ends  -->
+
+        <!-- about me section starts  -->
+        <div class="flex justify-center flex-row h-auto items-center">
+            <div class="px-16 space-y-4">
+                <h1
+                    class="text-2xl md:text-3xl font-bold text-yellow-400 text-center"
+                >
+                    ABOUT ME
+                </h1>
+                <p class="text-xl text-white text-justify">
+                    I’m a Front End Web developer who is passionate about making
+                    error-free websites with 100% client satisfaction. I am
+                    passionate about learning and sharing my knowledge with
+                    others as publicly as possible. I love to solve real-world
+                    problems.I have solved more than 500s realworld problem of
+                    different online judge. I am strategic and goal-oriented,
+                    and I always work with an end goal in mind. Over the past
+                    years, I created 20s of websites for my clients. I pride
+                    myself on doing quality work and maintaining excellent
+                    communication. Most of the time I work with WordPress but
+                    some technologies I enjoy working with include ReactJS,
+                    JavaScript, and Competitive programming.
+                </p>
+            </div>
+        </div>
+        <!-- about me section ends  -->
+
+        <!-- education section starts  -->
+
+        <div>
+            <div class="p-8 bg-gray-900">
+                <h2 class="text-3xl font-bold text-center mb-8 text-white">
+                    EDUCATION
+                </h2>
+
+                <div>
+                    <div
+                        class="card shadow-xl bg-base-100 hover:shadow-2xl transition-shadow duration-300"
+                    >
+                        <div class="card-body space-y-4">
+                            <div class="space-y-2">
+                                <h3
+                                    class="card-title text-xl font-semibold text-yellow-400"
+                                >
+                                    BSc. Engineering in Computer Science (CSE)
+                                </h3>
+                                <p class="text-sm text-gray-300">
+                                    Pabna University of Science & Technology,
+                                    2020 - 2025
+                                </p>
+                                <p class="text-gray-600">
+                                    Graduated with honors, specializing in
+                                    software development, algorithms, and data
+                                    structures.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h3
+                                    class="card-title text-xl font-semibold text-yellow-400"
+                                >
+                                    Higher Secondary Certificate (HSC)
+                                </h3>
+                                <p class="text-sm text-gray-300">
+                                    Dhaka Udyan Govt. College, Mohammadpur,Dhaka
+                                </p>
+                                <p class="text-gray-700">
+                                    Focused on machine learning, neural
+                                    networks, and data analysis, with a research
+                                    project in deep learning.
+                                </p>
+                            </div>
+                            <div class="space-y-2">
+                                <h3
+                                    class="card-title text-xl font-semibold text-yellow-400"
+                                >
+                                    Secondary School Certificate (SSC)
+                                </h3>
+                                <p class="text-sm text-gray-300">
+                                    Charkatari Sabuj Sena High School,
+                                    Daulatpur,Manikganj
+                                </p>
+                                <p class="text-gray-700">
+                                    Completed a full-stack web development
+                                    course, covering HTML, CSS, JavaScript,
+                                    React, Node.js, and databases.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- resume section starts  -->
+
+        <div class="flex justify-center items-center bg-gray-900 mb-5">
+            <div
+                class="flex justify-center gap-2 h-auto items-center text-yellow-300 border-yellow-400 border-2 p-3 rounded-lg hover:text-black hover:bg-yellow-300"
+            >
+                <i class="fa-solid fa-download text-3xl"></i>
+                <button class="text-3xl font-bold">DOWNLOAD CV</button>
+            </div>
+        </div>
+
+        <!-- resume section ends  -->
+
+        <!-- skills section start  -->
+        <div
+            class="grid w-full min-h-screen text-gray-100 bg-gray-900 place-content-center"
+        >
+            <h2 class="text-3xl font-bold text-center mt-8 mb-8">SKILLS</h2>
+
+            <section
+                x-data="skillDisplay"
+                class="p-6 space-y-6 bg-gray-800 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0"
+            >
+                <!-- Skill Buttons -->
+                <div class="grid grid-cols-2 gap-6 w-full">
+                    <template x-for="skill in skills" :key="skill.title">
+                        <button
+                            x-text="skill.title"
+                            class="px-2 py-2 text-xl text-white ring-2 ring-yellow-400 hover:text-black transition bg-gray-900 rounded-md h-14 w-auto hover:bg-yellow-300 border-yellow-400 border-2"
+                            :class="(currentSkill.title == skill.title) && 'font-bold ring-2 ring-gray-100'"
+                            @click="currentSkill = skill"
+                        ></button>
+                    </template>
+                </div>
+
+                <!-- Skill Progress Circle -->
+                <div
+                    class="relative flex items-center justify-center flex-wrap"
+                    x-data="{ circumference: 2 * 22 / 7 * 120 }"
+                >
+                    <svg class="transform -rotate-90 w-72 h-72">
+                        <circle
+                            cx="145"
+                            cy="145"
+                            r="120"
+                            stroke="currentColor"
+                            stroke-width="30"
+                            fill="transparent"
+                            class="text-gray-700"
+                        />
+                        <circle
+                            cx="145"
+                            cy="145"
+                            r="120"
+                            stroke="currentColor"
+                            stroke-width="30"
+                            fill="transparent"
+                            :stroke-dasharray="circumference"
+                            :stroke-dashoffset="circumference - currentSkill.percent / 100 * circumference"
+                            class="text-yellow-400"
+                        />
+                    </svg>
+                    <span
+                        class="absolute text-5xl"
+                        x-text="`${currentSkill.percent}%`"
+                    ></span>
+                </div>
+            </section>
+        </div>
+
+        <!-- education section ends  -->
+
+        <!-- projects sections starts  -->
+
+        <!-- component -->
+        <section class="bg-gray-900 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-white sm:text-5xl">
+                        PROJECTS
+                    </h2>
+                    <p class="mt-4 text-xl text-gray-400">
+                        Simple, transparent, responsive projects are here
+                    </p>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+                >
+                    <!-- Free Plan -->
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+                    >
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-white">
+                                Fitness Club
+                            </h3>
+                            <p class="mt-4 text-gray-400">
+                                Get started with our basic features.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-xl font-extrabold text-white"
+                                >Technology</span
+                            >
+                        </div>
+                        <ul class="mb-8 space-y-4 text-gray-400">
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>HTML</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>TailwindCSS</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Basic support</span>
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                        >
+                            Project Link
+                        </a>
+                    </div>
+
+                    <!-- Starter Plan -->
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+                    >
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-white">
+                                Homesmart
+                            </h3>
+                            <p class="mt-4 text-gray-400">
+                                Smart home service with a beautiful UI
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-xl font-extrabold text-white"
+                                >Technology</span
+                            >
+                        </div>
+                        <ul class="mb-8 space-y-4 text-gray-400">
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>HTML</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Tailwindcss</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>JavaScript</span>
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                        >
+                            Project Link
+                        </a>
+                    </div>
+
+                    <!-- Pro Plan -->
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+                    >
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-white">
+                                Pro
+                            </h3>
+                            <p class="mt-4 text-gray-400">
+                                Ideal for growing businesses and enterprises.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-xl font-extrabold text-white"
+                                >Technology</span
+                            >
+                        </div>
+                        <ul class="mb-8 space-y-4 text-gray-400">
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Unlimited user accounts</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Unlimited transactions</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Priority support</span>
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                        >
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div
+                        class="bg-gray-800 rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300"
+                    >
+                        <div class="mb-8">
+                            <h3 class="text-2xl font-semibold text-white">
+                                Enterprise
+                            </h3>
+                            <p class="mt-4 text-gray-400">
+                                Tailored for large-scale deployments and custom
+                                needs.
+                            </p>
+                        </div>
+                        <div class="mb-8">
+                            <span class="text-xl font-extrabold text-white"
+                                >Custom</span
+                            >
+                        </div>
+                        <ul class="mb-8 space-y-4 text-gray-400">
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Dedicated infrastructure</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Custom integrations</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-6 w-6 text-green-500 mr-2"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M5 13l4 4L19 7"
+                                    />
+                                </svg>
+                                <span>Dedicated support team</span>
+                            </li>
+                        </ul>
+                        <a
+                            href="#"
+                            class="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600"
+                        >
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- projects sections ends  -->
+
+        <!-- contact section starts  -->
+
+        <div class="p-2 lg:p-20">
+            <div>
+                <div class="pb-8">
+                    <h1 class="text-3xl font-bold text-center text-white">
+                        CONTACT
+                    </h1>
+                </div>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div
+                        class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                    >
+                        <div>
+                            <h1 class="lg:text-3xl group-hover:text-black">
+                                Email
+                            </h1>
+                            <h3
+                                class="lg:text-xl text-orange-400 group-hover:text-black"
+                            >
+                                mijan.cse19@gmail.com
+                            </h3>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-solid fa-envelope text-5xl text-yellow-300 group-hover:text-black"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                    >
+                        <div>
+                            <h1 class="text-3xl group-hover:text-black">
+                                Facebook
+                            </h1>
+                            <h3
+                                class="text-xl text-orange-400 group-hover:text-black"
+                            >
+                                Personal Facebook Profile
+                            </h3>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-brands fa-facebook-f text-5xl text-yellow-300 group-hover:text-black"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                    >
+                        <div>
+                            <h1 class="text-3xl group-hover:text-black">
+                                Github
+                            </h1>
+                            <h3
+                                class="text-xl text-orange-400 group-hover:text-black"
+                            >
+                                Personal Github Profile
+                            </h3>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-brands fa-github text-5xl text-yellow-300 group-hover:text-black"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                    >
+                        <div>
+                            <h1 class="text-3xl group-hover:text-black">
+                                Linkedin
+                            </h1>
+                            <h3
+                                class="text-xl text-orange-400 group-hover:text-black"
+                            >
+                                Personal Linkedin Profile
+                            </h3>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-brands fa-linkedin-in text-5xl text-yellow-300 group-hover:text-black"
+                            ></i>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex flex-row justify-evenly h-auto items-center w-full max-w-xs border border-yellow-400 rounded-lg bg-gray-900 focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent hover:border-solid text-white font-bold duration-500 ease-in-out hover:border-2 hover:ring-2 py-5 hover:bg-yellow-400 hover:ring-yellow-400 hover:shadow-md cursor-pointer group hover:shadow-yellow-300"
+                    >
+                        <div>
+                            <h1 class="text-3xl group-hover:text-black">
+                                Upwork
+                            </h1>
+                            <h3
+                                class="text-xl text-orange-400 group-hover:text-black"
+                            >
+                                Marketplace Profile
+                            </h3>
+                        </div>
+                        <div>
+                            <i
+                                class="fa-brands fa-upwork text-5xl text-yellow-300 group-hover:text-black"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact section ends  -->
+
+        <!-- footer section starts  -->
+        <footer class="footer footer-center bg-base-300 text-base-content p-4">
+            <aside>
+                <p class="font-bold text-white text-xl p-6">
+                    Copyright © 2024 - All right reserved Mijanur Rahman
+                </p>
+            </aside>
+        </footer>
+        <!-- footer section ends  -->
+
+        <!-- javaScript  -->
+        <script
+            defer
+            src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"
+        ></script>
+        <script src="./index.js"></script>
+    </body>
+</html>

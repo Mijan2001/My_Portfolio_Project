@@ -1,0 +1,19 @@
+{
+    "name": "my-portfolio",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tailwindcss -i ./docs/tailwind.css -o ./docs/output.css --watch",
+        "build-p": "postcss ./docs/tailwind.css -o ./docs/output.css --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "daisyui": "^4.12.10",
+        "postcss": "^8.4.41",
+        "tailwindcss": "^3.4.10"
+    }
+}
